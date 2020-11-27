@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DF000000"
+    tools:context=".ServicioCreado">
+
+    <Button
+        android:id="@+id/btinicio"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="214dp"
+        android:layout_marginBottom="31dp"
+        android:text="@string/play"
+        app:layout_constraintBottom_toTopOf="@+id/btstop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btstop"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/stop"
+        app:layout_constraintBottom_toTopOf="@+id/btsleep"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btinicio" />
+
+    <Button
+        android:id="@+id/btsleep"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="304dp"
+        android:text="@string/sleep"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btstop" />
+
+    <Button
+        android:id="@+id/btatras"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="@string/atras"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btsleep" />
+</androidx.constraintlayout.widget.ConstraintLayout>

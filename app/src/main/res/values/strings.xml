@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PacDesarrollo</string>
+    <string name="welcome">Welcome</string>
+    <string name="inicio">Volver al inicio</string>
+    <string name="datos">Datos</string>
+    <string name="musica">Música</string>
+    <string name="tabla">Crear tabla</string>
+    <string name="inserta">Insertar datos</string>
+    <string name="consulta">Consultar datos</string>
+    <string name="onServicio">Crear servicio</string>
+    <string name="offServicio">Detener servicio</string>
+    <string name="activity2">Entrando en la Activity 2</string>
+    <string name="creada">Tabla creada</string>
+    <string name="nombre">Escribe aquí tu nombre</string>
+    <string name="apellido"> apellido</string>
+    <string name="edad"> edad</string>
+    <string name="enviar">Enviar</string>
+    <string name="atras">Atrás</string>
+    <string name="play">Iniciar reproducción</string>
+    <string name="stop">Detener reproducción</string>
+    <string name="sleep">Bloquear</string>
+
+
+</resources>
