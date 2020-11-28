@@ -12,8 +12,9 @@ class ServicioCreado : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_servicio_creado)
-        Reproductor.starService(this)
         Toast.makeText(this,"Servicio iniciado", Toast.LENGTH_SHORT).show()
+        Reproductor.starService(this)
+
 
     }
 

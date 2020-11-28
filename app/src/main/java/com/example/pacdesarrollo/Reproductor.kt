@@ -18,18 +18,18 @@ class Reproductor : Service() {
     companion object{
 
         var mp : MediaPlayer? = null
-        val CHANNEL_ID = "Musica Channel"
+        const val CHANNEL_ID = "Musica Channel"
 
         //Iniciamos servicio
         fun starService(context: Context){
-            val startIntent = Intent(context, ServicioCreado::class.java)
+            val startIntent = Intent(context, Reproductor::class.java)
             ContextCompat.startForegroundService(context, startIntent)
 
         }
 
         //Destruimos servicio
         fun stopService(context: Context){
-            val stopIntent = Intent(context, ServicioCreado::class.java)
+            val stopIntent = Intent(context, Reproductor::class.java)
             context.stopService(stopIntent)
         }
 
@@ -65,7 +65,7 @@ class Reproductor : Service() {
         val notificationIntent = Intent(this, MainActivity::class.java)
         val pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent,0)
         val notification: Notification = NotificationCompat.Builder(this, CHANNEL_ID)
-                .setContentTitle("Reproduciendo audio")
+                .setContentTitle("Carla Morrison")
                 .setContentText("Todo pasa")
                 .setSmallIcon(R.drawable.ic_launcher_foreground)
                 .setCategory(NotificationCompat.CATEGORY_STATUS)
